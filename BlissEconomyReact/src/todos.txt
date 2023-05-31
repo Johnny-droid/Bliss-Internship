@@ -1,0 +1,7 @@
+check axios
+criar uma pasta theme (done)
+criar index.js nas nossas diretorias para facilitar imports (done)
+ter em atenção os imports, importar o react (done)
+ver -> react helmet
+"limpar" diretoria do src
+criar pasta utils para setup tests, report ... (done)

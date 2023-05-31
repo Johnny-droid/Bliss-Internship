@@ -1,0 +1,247 @@
+{
+  "transactions": [
+    {
+      "id": 1,
+      "title": "Market",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy.",
+      "value": 50,
+      "date": "2023-05-04",
+      "type": true
+    },
+    {
+      "value": 50,
+      "date": "2023-05-16",
+      "title": "Food",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy.",
+      "type": false,
+      "id": 2
+    },
+    {
+      "id": 3,
+      "title": "Salary",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy.",
+      "value": 100,
+      "date": "2023-05-15",
+      "type": true
+    },
+    {
+      "id": 4,
+      "title": "Rent",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy.",
+      "value": 100,
+      "date": "2023-05-15",
+      "type": false
+    },
+    {
+      "id": 9,
+      "title": "Lottery",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy.",
+      "value": 10,
+      "date": "2023-05-14",
+      "type": true
+    },
+    {
+      "id": 10,
+      "title": "Phone",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy.",
+      "value": 10,
+      "date": "2023-05-10",
+      "type": false
+    },
+    {
+      "id": 11,
+      "title": "Game Reward",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy.",
+      "value": 40,
+      "date": "2023-05-10",
+      "type": true
+    },
+    {
+      "id": 12,
+      "title": "Internet",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy.",
+      "value": 40,
+      "date": "2023-05-11",
+      "type": false
+    },
+    {
+      "id": 13,
+      "title": "Grandma Money",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy.",
+      "value": 10,
+      "date": "2023-05-05",
+      "type": true
+    },
+    {
+      "id": 14,
+      "title": "Gym",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy.",
+      "value": 10,
+      "date": "2023-05-06",
+      "type": false
+    },
+    {
+      "id": 15,
+      "title": "Poker with Monkeys",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy.",
+      "value": 15,
+      "date": "2023-05-15",
+      "type": true
+    },
+    {
+      "id": 16,
+      "title": "Travel",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy.",
+      "value": 15,
+      "date": "2023-05-16",
+      "type": false
+    },
+    {
+      "id": 17,
+      "title": "Illegal Gang",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy.",
+      "value": 40,
+      "date": "2023-05-14",
+      "type": true
+    },
+    {
+      "id": 18,
+      "title": "Pets",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy.",
+      "value": 40,
+      "date": "2023-05-03",
+      "type": false
+    },
+    {
+      "id": 19,
+      "title": "Bank Robbery",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy.",
+      "value": 10,
+      "date": "2023-05-02",
+      "type": true
+    },
+    {
+      "id": 20,
+      "title": "Gifts",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy.",
+      "value": 10,
+      "date": "2023-04-25",
+      "type": false
+    },
+    {
+      "id": 21,
+      "title": "Bliss Ski Money",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy.",
+      "value": 30,
+      "date": "2023-04-30",
+      "type": true
+    },
+    {
+      "id": 22,
+      "title": "Games",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy.",
+      "value": 30,
+      "date": "2023-04-29",
+      "type": false
+    },
+    {
+      "id": 23,
+      "title": "Bribery from Trumph",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy.",
+      "value": 10,
+      "date": "2023-04-27",
+      "type": true
+    },
+    {
+      "id": 24,
+      "title": "Books",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy.",
+      "value": 10,
+      "date": "2023-04-21",
+      "type": false
+    },
+    {
+      "id": 25,
+      "title": "Robot Girlfriend Sale",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy.",
+      "value": 20,
+      "date": "2023-04-23",
+      "type": true
+    },
+    {
+      "id": 26,
+      "title": "Movies",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy.",
+      "value": 20,
+      "date": "2023-05-12",
+      "type": false
+    },
+    {
+      "value": 250,
+      "date": "2023-05-11",
+      "title": "Baby Pension",
+      "description": "Woooooooooooooooooow",
+      "type": true,
+      "id": 27
+    },
+    {
+      "value": 50,
+      "date": "2023-05-02",
+      "title": "Life",
+      "description": "I think my life is worth a LOT!",
+      "type": true,
+      "id": 31
+    },
+    {
+      "value": 300,
+      "date": "2023-05-08",
+      "title": "Life",
+      "description": "I think my Life is worth a LOT!",
+      "type": true,
+      "id": 32
+    },
+    {
+      "value": 200,
+      "date": "2023-05-09",
+      "title": "Robbers",
+      "description": "They stole my 200 euros bike!!!",
+      "type": true,
+      "id": 33
+    },
+    {
+      "value": 100,
+      "date": "2023-05-16",
+      "title": "Queima das Fitas",
+      "description": "Foi muito fixe, mas o dinheiro desapareceu",
+      "type": false,
+      "id": 34
+    },
+    {
+      "id": 36,
+      "value": 500,
+      "date": "2023-04-30",
+      "title": "Testttt",
+      "description": "Wooooooooooooooooow",
+      "type": true
+    },
+    {
+      "value": 45,
+      "date": "2023-05-16",
+      "title": "Life",
+      "description": "Wooooooooooooow",
+      "type": true,
+      "id": 37
+    },
+    {
+      "id": 38,
+      "value": 70,
+      "date": "2023-05-15",
+      "title": "Ice Cream",
+      "description": "Budget to eat ice cream from Bliss",
+      "type": true
+    }
+  ],
+  "profile": {
+    "name": "Darth Vader"
+  }
+}

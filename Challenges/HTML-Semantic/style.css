@@ -1,0 +1,357 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+}
+
+body {
+	width: 100%;
+	margin: 0 auto;
+	color: #2c3e50;
+	min-height: 100vh;
+	display: flex;
+	flex-wrap: wrap;
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.5rem;
+}
+
+h1,
+h2,
+h3 {
+	color: #2a2a2a;
+}
+
+p,
+input,
+li {
+	color: #2a2a2a;
+}
+
+h1 {
+	font-size: 4rem;
+	text-align: left;
+}
+
+h2 {
+	font-size: 3rem;
+	text-align: left;
+}
+
+h3 {
+	font-size: 2.2rem;
+}
+
+p,
+li {
+	font-size: 1.5rem;
+	line-height: 1.5;
+}
+
+main {
+	max-width: 1400px;
+	margin: auto;
+	font-size: 1.5rem;
+}
+main,
+aside,
+footer {
+	padding: 0 3rem;
+}
+
+header {
+	background-color: #2c3e50;
+	text-align: center;
+	width: 100%;
+	max-width: 100%;
+	overflow: hidden;
+}
+
+header > div {
+	max-width: 1400px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem 3rem;
+}
+
+header > section {
+	background-color: white;
+}
+
+header > section img {
+	display: block;
+}
+
+header nav {
+	height: auto;
+	background-color: #2c3e50;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header nav ul {
+	padding: 0;
+	list-style-type: none;
+	flex: 2;
+	display: flex;
+}
+
+header nav li {
+	list-style: none;
+	display: inline;
+	text-align: left;
+	flex: 1;
+	margin: 0 4rem;
+}
+
+header nav a {
+	display: inline-block;
+	font-size: 1.9rem;
+	text-decoration: none;
+	color: white;
+	font-weight: 600;
+}
+
+header nav form {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	height: 100%;
+	padding: 0 2em;
+}
+
+input {
+	font-size: 1.6rem;
+	height: 32px;
+	background-color: rgba(255, 255, 255, 0.8);
+	border: none;
+	appearance: none;
+	padding: 1rem;
+}
+
+::placeholder {
+	font-size: 12px;
+	color: #2c3e50;
+	opacity: 1;
+}
+
+input[type='search'] {
+	flex: 3;
+}
+
+input[type='submit'] {
+	flex: 1;
+	margin-left: 1rem;
+	background: white;
+	border: 0;
+	color: #2c3e50;
+	font-size: 1.2rem;
+}
+
+main {
+	display: flex;
+	margin: 6rem auto;
+}
+
+main > div {
+	flex: 4;
+	padding-right: 2rem;
+	padding-bottom: 2rem;
+}
+
+main > div > section:not(:last-child) {
+	padding-bottom: 3rem;
+	border-bottom: #2c3e502e 1px solid;
+}
+
+section div {
+	display: flex;
+	justify-content: space-between;
+}
+
+section article {
+	border: #2c3e502e 1px solid;
+	width: 32%;
+	padding-bottom: 4rem;
+	text-align: center;
+}
+
+section span {
+	color: brown;
+}
+
+section article > h2 {
+	text-align: center;
+}
+
+section article a {
+	background-color: #2c3e50;
+	color: white;
+	text-decoration: none;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	padding: 1rem 2rem;
+	font-weight: 600;
+}
+
+section article img {
+	width: 100%;
+}
+
+aside {
+	flex: 1;
+	background-color: white;
+	padding: 0 4rem 4rem 4rem;
+}
+
+aside section article {
+	width: 100%;
+	margin: 0 0 2rem 0;
+	padding-bottom: 2rem;
+}
+
+aside section article a {
+	background-color: transparent;
+	color: #2c3e50;
+	text-decoration: underline;
+	font-size: 1.2rem;
+}
+
+aside ul {
+	padding: 0;
+}
+
+aside li {
+	padding-bottom: 10px;
+	padding-left: 0;
+	list-style-type: none;
+}
+
+aside li a {
+	color: #2c3e50;
+}
+
+footer {
+	width: 100%;
+	text-align: center;
+	background-color: #2c3e50;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+footer p {
+	color: inherit;
+	font-size: 1.2rem;
+}
+
+footer nav {
+	color: inherit;
+}
+
+footer nav ul {
+	background-color: none;
+	list-style: none;
+}
+
+footer nav ul li {
+	background-color: none;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 1rem;
+}
+
+main details {
+	font: 1.5rem;
+	width: 100%;
+	margin-bottom: 2rem;
+	border: #2c3e502e 1px solid;
+}
+
+main details > summary {
+	padding: 1rem 2rem;
+	width: 100%;
+	background-color: #fff;
+	border: none;
+	cursor: pointer;
+	display: block;
+}
+
+main details > summary::after {
+	margin-left: 1rem;
+	display: inline-block;
+	transition: 0.2s;
+	content: '\203A'; /* chevron */
+}
+
+main details > p {
+	padding: 1rem 2rem;
+	border-radius: 0 0 10px 10px;
+	border: #2c3e502e 1px solid;
+	margin: 0;
+}
+
+main details[open] > summary {
+	background-color: #2c3e50;
+	color: white;
+}
+
+main details[open] summary::after {
+	transform: rotate(90deg);
+}
+
+main form fieldset {
+	border: none;
+	padding: 0 0 3rem 0;
+}
+
+main form label {
+	display: block;
+	font-weight: 500;
+	margin-bottom: 0.5rem;
+}
+
+main form input {
+	width: 100%;
+	display: block;
+	border: #2c3e502e 1px solid;
+	height: 4rem;
+	padding: 1rem;
+}
+
+main form select {
+	width: 100%;
+	display: block;
+	border: #2c3e502e 1px solid;
+	height: 4rem;
+	color: #2c3e50;
+	padding: 1rem;
+	font-size: 1.5rem;
+	font-family: 'Raleway', sans-serif;
+}
+
+main form textarea {
+	width: 100%;
+	display: block;
+	border: #2c3e502e 1px solid;
+	height: auto;
+	color: #2c3e50;
+	padding: 1rem;
+}
+
+::placeholder {
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.5rem;
+}
