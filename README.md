@@ -8,6 +8,8 @@ For more detailed information about the internship you can check the report.
 
 During the internship, the main project we created was a website called Bliss Economics.
 
+The video can be seen [here](https://www.youtube.com/watch?v=Fn85qb8v02U&ab_channel=Jo%C3%A3oAlves).
+
 ## Bliss Economics
 
 Website used to manage your money, in order to make sure our clients can save their money and invest it in the best way possible (obviously, in Bliss).
