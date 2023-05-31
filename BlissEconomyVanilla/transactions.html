@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/side_menu.js" defer></script>
+    <script src="js/transactions.js" type="module" defer></script>
+    <title>Bliss Economics</title>
+</head>
+
+<body>
+    <aside id="menu_side" class="disabled shadow-lg z-30 bg--grey-medium">
+        <div id="menu_side_icon" class="ml-8 mt-5 mb-8">
+            <img src="assets/logo_desktop.png" alt="Logo Bliss Economics">
+        </div>
+        <button id="menu_side_close">
+            <img src="assets/icon_menu_close.png" alt="Icon Close Menu">
+        </button>
+
+        <nav class="flex flex-col items-center">
+            <div class="flex flex-row p-5 w-full hover:bg-zinc-200  border__left--empty">
+                <img class="ml-3 mr-6" src="assets/icon_chart_3.png" alt="Chart Icon">
+                <a class="color--grey-dark" href="index.html">Dashboard</a>
+            </div>
+            <div class="flex flex-row p-5 w-full bg--grey-semidark border__left--selected">
+                <img class="ml-3 mr-6" src="assets/icon_arrow_swap_horizontal_2.png" alt="Dashboard Icon">
+                <a class="color--secondary" href="transactions.html">Transactions</a>
+            </div>
+        </nav>
+
+        <div class="flex flex-row self-center pb-5">
+            <img class="h-6 mx-3" src="assets/icon_linkedin.png" alt="Linkedin Logo">
+            <img class="h-6 mx-3" src="assets/icon_facebook.png" alt="Facebook Logo">
+            <img class="h-6 mx-3" src="assets/icon_instagram.png" alt="Instagram Logo">
+            <img class="h-6 mx-3" src="assets/icon_twitter.png" alt="Twitter Logo">
+        </div>
+
+    </aside>
+
+    <header class="shadow-lg z-20 bg-white">
+        <button id="menu_side_open">
+            <img src="assets/icon_menu_open.png" alt="Icon Open Menu">
+        </button>
+        <img id="logo_mobile" class="my-8" src="assets/logo_mobile.png" alt="Logo Bliss Economy">
+    </header>
+
+    <main class="bg--main">
+        <section class="rounded-lg shadow-lg bg-white">
+            <div class="flex flex-row justify-between items-center bg-white px-8">
+                <h2 class="color--primary font-semibold leading-5">Transactions</h2>
+                <div class="flex flex-row items-center mt-4 mb-2">
+                    <button id="income__add" class="flex flex-col items-center mr-10">
+                        <img src="assets/icon_wallet_add_green.png" alt="Income Wallet Icon">
+                        <span class="color--positive">Income</span>
+                    </button>
+                    <button id="expense__add" class="flex flex-col items-center">
+                        <img src="assets/icon_wallet_minus_red.png" alt="Expenses Wallet Icon">
+                        <span class="color--negative">Expense</span>
+                    </button>
+                </div>
+            </div>
+
+            <ul id="list_transactions" class="w-full bg-white">
+                <li class="lg:flex lg:flex-row lg:items-center hidden h-10 bg--grey-light border__bottom">
+                    <span class="w-[15%] ml-5 text-xs font-semibold color--grey-superdark">Date</span>
+                    <span class="w-[60%] text-xs font-semibold color--grey-superdark">Description</span>
+                    <span class="w-[17%] text-xs font-semibold color--grey-superdark flex flex-row justify-center">Value</span>
+                    <span class="w-[8%] mr-5 text-xs font-semibold color--grey-superdark flex flex-row justify-center">Action</span>
+                </li>
+
+            </ul>
+
+            <div class="flex flex-row justify-end items-center h-11 mr-5">
+                <span id="transactions_counter" class="text-xs color--grey-superdark mr-2">1-3 de 3</span>
+                <button id="btn_first" class="text-xs color--grey-superdark mr-3">|<</button>
+                <button id="btn_back" class="text-xs color--grey-superdark mr-3"><</button>
+                <button id="btn_next" class="text-xs color--grey-superdark mr-3">></button>
+                <button id="btn_last" class="text-xs color--grey-superdark mr-3">>|</button>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="shadow-lg z-40 min">
+        <span>Copyright © Bliss Academy 2023. All rights reserved.</span>
+    </footer>
+
+    
+    <div id="modal" class="hide modal bg--grey-medium p-4 rounded-3xl">
+        <div class="flex flex-row justify-end w-full">
+            <button id="modal__close">
+                <img src="assets/icon_close_modal.png" alt="Close Modal Icon">
+            </button>
+        </div>
+        <div class="flex flex-row justify-center mb-6">
+            <h4 id="modal__title" class="text-3xl font-semibold color">Main</h4>
+        </div>
+        <form id="modal__form" class="flex flex-col grow">
+            <div class="flex flex-wrap w-full grow px-11">
+                <div class="flex flex-col w-1/2 pr-6">
+                    <div class="flex flex-col mb-4">
+                        <label for="value" class="color">Value</label>
+                        <input type="number" name="value" id="value" class="rounded">
+                    </div>
+                    <div class="flex flex-col mb-4">
+                        <label for="date" class="color">Date</label>
+                        <input type="date" name="date" id="date" class="rounded">
+                    </div>
+                    <div class="flex flex-col mb-4">
+                        <label for="title" class="color">Title</label>
+                        <input type="text" name="title" id="title" class="rounded">
+                    </div>
+                    <div class="flex flex-col">
+                        <label for="description" class="color">Description</label>
+                        <textarea name="description" id="description" cols="20" rows="5" placeholder="..." class="rounded p-2"></textarea>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center w-1/2 pl-6">
+                    <label for="" class="color mb-5">Attachment</label>
+                    <input type="file" name="" id="">
+                </div>
+            </div>
+            <div class="flex flex-row justify-end items-end w-full">
+                <button id="transaction__btn--cancel" class="bg--negative text-white w-24 mr-4 rounded">Cancel</button>
+                <button id="transaction__btn--save" class="bg--positive text-white w-24 mr-5 rounded">Save</button>
+                <!--
+                <input type="submit" value="Cancel">
+                <input type="submit" value="Submit">
+                -->
+            </div>
+        </form>
+
+    </div>
+    
+
+
+</body>
+
+</html>

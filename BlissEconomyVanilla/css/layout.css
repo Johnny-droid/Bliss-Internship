@@ -1,0 +1,220 @@
+
+
+@media (min-width: 1200px) {
+    body {
+        display: grid;
+        grid-template: 3rem 1fr 3rem / 16rem 1fr;
+    }
+
+    aside {
+        grid-area: 1 / 1 / 4 / 2;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    aside nav {
+        flex: 1;
+    }
+
+    header {
+        grid-area: 1 / 2 / 2 / 3;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+    }
+
+    #menu_side_close, #menu_side_open {
+        display: none;
+    }
+
+    main {
+        grid-area: 2 / 2 / 3 / 3;
+        padding-left: 5rem;
+        padding-right: 5rem;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    #main-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #logo_mobile {
+        display: none;
+    }
+
+    #balance_graphic {
+        padding-left: 4rem;
+        padding-right: 4rem;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .list-cards {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .list-cards div:nth-child(1) {
+        margin-left: 1.25rem;
+        margin-right: 2.75rem;
+    }
+
+    .list-cards div:nth-child(3) {
+        margin-right: 12rem;
+        flex-grow: 3;
+    }
+
+    .list-cards :nth-child(4) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-grow: 1;
+    }
+
+
+    .list-cards :nth-child(4) > div {
+        margin-right: 3.5rem;
+    }
+
+    footer {
+        grid-area: 3 / 2 / 4 / 3;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1200px) {
+    aside {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        left: -120vw;
+        width: 100vw;
+        height: 100vh;
+        min-height: 100vh;
+        transition: left 600ms ease-in-out;
+    }
+
+    aside.active {
+        left: 0;
+    }
+
+    aside.disabled {
+        left: -120vw;
+    }
+
+    aside nav {
+        margin-top: 3.375rem;
+        flex-grow: 1;
+    }
+
+    #menu_side_icon {
+        display: none;
+    }
+
+    #menu_side_close {
+        margin-top: 1.5rem;
+        margin-left: 2.5rem;
+    }
+
+    header {
+        display: flex;
+        position: fixed;
+        flex-direction: row;
+        justify-content: center;
+        width: 100vw;
+        height: 5.75rem;
+    }
+
+    #menu_side_open {
+        position: absolute;
+        top: 2.5rem;
+        left: 2.5rem;
+    }
+
+    main {
+        position: relative;
+        top: 5.75rem;
+        padding-left: 2.75rem;
+        padding-right: 2.75rem;
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    #main-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    #eye_icon {
+        display: none;
+    }
+
+    .chart-container {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    .list-cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .list-cards .list-image {
+        display: none;
+    }
+
+    .list-cards > div:nth-child(1) {
+        width: 50%;
+        height: 50%;
+        padding-left: 1rem;
+    }
+
+    .list-cards > div:nth-child(3) {
+        width: 100%;
+        height: 50%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        order: 100;
+    }
+
+    .list-cards > div:nth-child(4) {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        width: 50%;
+        height: 50%;
+    }
+
+    .list-cards > div:nth-child(4) > div {
+        margin-right: 1rem;
+    }
+
+    footer {
+        display: none;
+    }
+
+}
+
+.modal {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 50;
+    min-width: 43.75rem;
+    min-height: 31.25rem;
+}

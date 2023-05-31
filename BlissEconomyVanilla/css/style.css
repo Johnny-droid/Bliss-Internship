@@ -1,0 +1,119 @@
+:root {
+    --color-primary: #7600d2;
+    --color-secondary: #0bac9b;
+    --color-positive: #41D158;
+    --color-negative: #f86c6c;
+    --color-grey-superdark: #6d6d6d;
+    --color-grey-dark: #9d9d9d;
+    --color-grey-semidark: #d9d9d9;
+    --color-grey-medium: #e9e9e9;
+    --color-grey-light: #ededed;
+    --color-main: #f4f6f8;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-size: 1rem;
+}
+
+h1, h2, h3 {
+    color: var(--color-primary);
+}
+
+.color--positive {
+    color: var(--color-positive);
+}
+
+.color--negative {
+    color: var(--color-negative);
+}
+
+.color--primary {
+    color: var(--color-primary);
+}
+
+.color--secondary {
+    color: var(--color-secondary);
+}
+
+.color--grey-superdark {
+    color: var(--color-grey-superdark);
+}
+
+.color--grey-dark {
+    color: var(--color-grey-dark);
+}
+
+.color--grey-semidark {
+    color: var(--color-grey-semidark);
+}
+
+.bg--positive {
+    background-color: var(--color-positive);
+}
+
+.bg--negative {
+    background-color: var(--color-negative);
+}
+
+.color--grey-medium {
+    color: var(--color-grey-medium);
+}
+
+.color--grey-light {
+    color: var(--color-grey-light);
+}
+
+.bg--grey-superdark {
+    background-color: var(--color-grey-superdark);
+}
+
+.bg--grey-dark {
+    background-color: var(--color-grey-dark);
+}
+
+.bg--grey-semidark {
+    background-color: var(--color-grey-semidark);
+}
+
+.bg--grey-medium {
+    background-color: var(--color-grey-medium);
+}
+
+.bg--grey-light {
+    background-color: var(--color-grey-light);
+}
+
+.bg--main {
+    background-color: var(--color-main);
+}
+
+.border__left--selected {
+    border-left: 3px solid var(--color-secondary);
+}
+
+.border__left--empty {
+    border-left: 3px solid var(--color-grey-light);
+}
+
+.border__color--grey-dark {
+    border-color: var(--color-grey-dark);
+}
+
+.border__bottom {
+    border-bottom: 1px solid var(--color-grey-dark);
+}
+
+.money--hidden {
+    color: transparent !important;
+    background-color: var(--color-grey-semidark);
+    border-radius: 3px;
+    height: 5px;
+    margin-top: 6px;
+    overflow: hidden;
+}
+
+.hide {
+    display: none;
+}

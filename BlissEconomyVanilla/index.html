@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/side_menu.js" defer></script>
+    <script src="js/hide_money.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/chart.js" defer></script>
+    <title>Bliss Economics</title>
+</head>
+
+<body>
+    <aside id="menu_side" class="disabled shadow-lg z-30 bg--grey-medium">
+        <div id="menu_side_icon" class="ml-8 mt-5 mb-8">
+            <img src="assets/logo_desktop.png" alt="Logo Bliss Economics"/>
+        </div>
+        <button id="menu_side_close">
+            <img src="assets/icon_menu_close.png" alt="Icon Close Menu"/>
+        </button>
+
+        <nav class="flex flex-col items-center">
+            <div class="flex flex-row p-5 w-full bg--grey-semidark border__left--selected">
+                <img class="ml-3 mr-6" src="assets/icon_chart_2.png" alt="Chart Icon"/>
+                <a class="color--secondary" href="index.html">Dashboard</a>
+            </div>
+            <div class="flex flex-row p-5 w-full hover:bg-zinc-200 border__left--empty">
+                <img class="ml-3 mr-6" src="assets/icon_arrow_swap_horizontal_3.png" alt="Dashboard Icon">
+                <a class="color--grey-dark" href="transactions.html">Transactions</a>
+            </div>
+        </nav>
+
+        <div class="flex flex-row self-center pb-5">
+            <img class="h-6 mx-3" src="assets/icon_linkedin.png" alt="Linkedin Logo">
+            <img class="h-6 mx-3" src="assets/icon_facebook.png" alt="Facebook Logo">
+            <img class="h-6 mx-3" src="assets/icon_instagram.png" alt="Instagram Logo">
+            <img class="h-6 mx-3" src="assets/icon_twitter.png" alt="Twitter Logo">
+        </div>
+
+    </aside>
+
+    <header class="shadow-lg z-20 bg-white">
+        <button id="menu_side_open">
+            <img src="assets/icon_menu_open.png" alt="Icon Open Menu">
+        </button>
+        <img id="logo_mobile" class="my-8" src="assets/logo_mobile.png" alt="Logo Bliss Economy">
+        <button id="hide_money_button">
+            <img id="eye_icon" class="p-2" src="assets/icon_eye.png" alt="Eye Icon">    
+        </button>
+        <button id="show_money_button" style="display: none;">
+            <img id="eye_icon" class="p-2" src="assets/icon_eye_slash.png" alt="Eye Slash Icon">    
+        </button>
+    </header>
+
+    <main class="bg--main">
+        <h1 class="hidden">Bliss Economy</h1>
+        <h2 class="text-2xl font-bold mb-10">Hello, Darth Vader</h2>
+
+        <section id="main-info" class="mb-10">
+            <div class="flex flex-col items-center m-2 w-80 rounded-md overflow-hidden shadow-lg bg-white">
+                <h4 class="color--positive py-3 px-24 font-bold text-xl">Incomes</h4>
+                <div class="flex flex-row justify-around items-center mb-7 mt-4 mx-6">
+                    <img class="mr-12" src="assets/icon_arrow_up.png" alt="Arrow Up">
+                    <span class="money_hidable color--positive font-bold text-3xl">€&nbsp;100,00</span>
+                </div>
+            </div>
+            <div class="flex flex-col items-center m-2 w-80 rounded-md overflow-hidden shadow-lg bg-white">
+                <h4 class="color--negative py-3 px-24 font-bold text-xl">Expenses</h4>
+                <div class="flex flex-row justify-around items-center mb-7 mt-4 mx-6">
+                    <img class="mr-12" src="assets/icon_arrow_down.png" alt="Arrow Down">
+                    <span class="money_hidable color--negative font-bold text-3xl">€&nbsp;50,00</span>
+                </div>
+            </div>
+            <div class="flex flex-col items-center m-2 w-80 rounded-md overflow-hidden shadow-lg bg-white">
+                <h4 class="color--primary py-3 px-24 font-bold text-xl">Account&nbsp;balance</h4>
+                <div class="flex flex-row justify-around items-center mb-7 mt-4 mx-6">
+                    <img class="mr-12" src="assets/icon_wallet_money_fill.png" alt="Wallet">
+                    <span class="money_hidable color--primary font-bold text-3xl">€&nbsp;50,00</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-10">
+            <h3 class="text-lg font-bold mb-6">Weekly balance</h3>
+            <div id="balance_graphic" class="flex flex-col items-center rounded-md overflow-hidden shadow-lg bg-white">
+                <select id="graphic_period" class="color--primary self-end my-2 mr-1 p-1 rounded" name="balance_select">
+                    <option value="day">Day</option>
+                    <option value="week" selected>Week</option>
+                    <option value="month">Month</option>
+                    <option value="year">Year</option>
+                </select>
+                <div class="chart-container self-center w-full lg:w-5/6" style="position: relative; height:100%;">
+                    <canvas id="myChart" ></canvas>
+                </div>
+                <!-- <img src="assets/week_graphic.png" alt="Statistics Graph">  -->
+            </div>
+        </section>
+
+        <section>
+            <h3 class="text-lg font-bold mb-6">Last Transactions</h3>
+            <ul>
+                <li class="list-cards bg-white my-4 py-4 rounded-md overflow-hidden shadow-lg">
+                    <div class="min-w-max">
+                        <img class="h-10 w-10" src="assets/icon_arrow_down.png" alt="Arrow Down">
+                    </div>
+                    <img class="list-image bg--grey-semidark p-2 mr-12 rounded-md" src="assets/icon_image.png" alt="Image Default">
+                    <div>
+                        <h5 class="text-neutral-500 font-bold">Netflix</h5>
+                        <p class="text-neutral-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quaerat magnam, soluta facere vitae fuga!</p>
+                    </div>
+                    <div>
+                        <div class="font-semibold text-neutral-500">22/03/2023</div>
+                        <div class="money_hidable font-semibold text-neutral-500">€&nbsp;25,00</div>             
+                    </div>
+                </li>
+
+                <li class="list-cards bg-white my-4 py-4 rounded-md overflow-hidden shadow-lg">
+                    <div class="min-w-max">
+                        <img class="h-10 w-10" src="assets/icon_arrow_up.png" alt="Arrow Up">
+                    </div>
+                    <img class="list-image bg--grey-semidark p-2 mr-12 rounded-md" src="assets/icon_image.png" alt="Image Default">
+                    <div>
+                        <h5 class="text-neutral-500 font-bold">HBO</h5>
+                        <p class="text-neutral-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quaerat magnam, soluta facere vitae fuga!</p>
+                    </div>
+                    <div>
+                        <div class="font-semibold text-neutral-500">22/03/2023</div>
+                        <div class=" money_hidable font-semibold text-neutral-500">€&nbsp;25,00</div>    
+                    </div>
+
+                </li>
+
+                <li class="list-cards bg-white my-4 py-4 rounded-md overflow-hidden shadow-lg">
+                    <div class="min-w-max">
+                        <img class="h-10 w-10" src="assets/icon_arrow_down.png" alt="Arrow Down">
+                    </div>
+                    <img class="list-image bg--grey-semidark p-2 mr-12 rounded-md" src="assets/icon_image.png" alt="Image Default">
+                    <div>
+                        <h5 class="text-neutral-500 font-bold">Disney+</h5>
+                        <p class="text-neutral-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quaerat magnam, soluta facere vitae fuga!</p>
+                    </div>
+                    <div>
+                        <div class="font-semibold text-neutral-500">22/03/2023</div>
+                        <div class="money_hidable font-semibold text-neutral-500">€&nbsp;25,00</div>
+                    </div>
+
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="shadow-lg z-40 min">
+        <span>Copyright © Bliss Academy 2023. All rights reserved.</span>
+    </footer>
+
+</body>
+
+</html>
