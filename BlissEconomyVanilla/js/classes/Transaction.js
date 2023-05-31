@@ -26,13 +26,13 @@ export class Transaction {
     
 
     static async getTransaction(id) {
-        let response = await fetch('http://localhost:3001/transactions/' + id);
+        let response = await fetch('http://localhost:4000/transactions/' + id);
         let data = await response.json();
         return new Transaction(data);
     }
 
     static async getTransactions() {
-        let response = await fetch('http://localhost:3001/transactions');
+        let response = await fetch('http://localhost:4000/transactions');
         let data = await response.json();
         let transactions = [];
         data.forEach(data => {
@@ -42,7 +42,7 @@ export class Transaction {
     }
 
     static async getTransactionsPage(page=1, limit=10) {
-        let response = await fetch('http://localhost:3001/transactions?_page=' + page + '&_limit=' + limit);
+        let response = await fetch('http://localhost:4000/transactions?_page=' + page + '&_limit=' + limit);
         let data = await response.json();
         let transactions = [];
         data.forEach(data => {
@@ -54,7 +54,7 @@ export class Transaction {
     static async addTransaction(formData) {
         let response;
         const request = new XMLHttpRequest();
-        request.open("POST", "http://localhost:3001/transactions");
+        request.open("POST", "http://localhost:4000/transactions");
         request.setRequestHeader("Content-Type", "application/json");
         request.send(formData);
         request.onload = () => {
@@ -66,7 +66,7 @@ export class Transaction {
     static async updateTransaction(formData) {
         let response;
         const request = new XMLHttpRequest();
-        request.open("PUT", "http://localhost:3001/transactions/" + JSON.parse(formData).id);
+        request.open("PUT", "http://localhost:4000/transactions/" + JSON.parse(formData).id);
         request.setRequestHeader("Content-Type", "application/json");
         request.send(formData);
         request.onload = () => {
