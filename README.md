@@ -40,7 +40,7 @@ Run the following command:
 
 `json-server --port 4000 db.json`
 
-### Start the React app:
+#### Start the React app:
 
 In React, to run the app locally use:
 
