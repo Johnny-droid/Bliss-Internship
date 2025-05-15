@@ -1,5 +1,7 @@
 # Bliss Internship
 
+![Website Img](img/main.png)
+
 ## Description
 
 This repository contains the projects I've worked on during my internship at Bliss Applications. 
@@ -9,6 +11,8 @@ For more detailed information about the internship you can check the report.
 During the internship, the main project we created was a website called Bliss Economics.
 
 The video can be seen [here](https://www.youtube.com/watch?v=Fn85qb8v02U&ab_channel=Jo%C3%A3oAlves).
+
+For more information you can also check the project report.
 
 ## Bliss Economics
 
